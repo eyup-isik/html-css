@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #cars{
+            border: 2px red solid;
+           
+            width: 50%;
+        }
+        #yorum{
+            resize: none;
+            width: 300px;
+            height: 100px;
+        }
+    </style>
+    <title>Formlar</title>
+</head>
+<body>
+    <h1>Welcome to clarusway</h1>
+    <form action="result.html" method="get">
+        <div>
+            <label for="name">Adınızı girin:</label>
+            <input type="text" name="İsim" id="name" placeholder="adınızı giriniz" size="10px" required>
+            <br>
+    
+            <label for="surname">Soyadınızı Girin:</label>
+            <input type="text" name="soyisim" id="surname" placeholder="soyadınızı girin" required>
+            
+            
+
+        </div>
+
+        <div>
+            <label for="password">parolanızı giriniz</label>
+            <input type="password" name="girilen parola" id="password" required>
+        </div>
+        <div>
+            <input type="radio" name="cinsiyet" id="cins" value="male">
+            <label for="cins">male</label>
+            
+            <br>
+            <input type="radio" name="cinsiyet" id="cins2" value="female" required>
+            <label for="cins2">female</label>
+            
+        </div>
+        <div>
+            <input type="checkbox" name="arabalar" id="car1" value="tofaş">
+            <label for="car1">tofaş</label><br>
+            <input type="checkbox" name="arabalar2" id="car2" value="seat">
+            <label for="car2">seat</label><br>
+            <input type="checkbox" name="arabalar3" id="car3" value="şahin" >
+            <label for="car3">şahin</label><br>
+            <input type="checkbox" name="arabalar4" id="car4" value="">
+            <label for="car4">şahin</label><br>
+        </div>
+        <div>
+            <label for="age">yaşınızı girin </label>
+            <input type="number" name="girilen yaş" id="age" value="0" step="5" min="18">
+        </div>
+        <div>
+            <label for="search">search:</label>
+            <input type="search" name="arama" id="search" maxlength="10" >
+            
+        </div>
+        <div> 
+            <input type="color" name="renk1" id="renk" >
+            <label for="renk">renk seçin</label>
+        </div>
+            <div>
+                <label for="TArih">tarih seçin</label>
+                <input type="date" name="seçilen_tarih" id="TArih">
+            </div>
+            <div>
+                <label for="dosya">dosyasec</label>
+                <input type="file" name="seçilen dosya" id="dosya"> 
+            </div>
+            <div>
+                <label for="no">tel no</label>
+                <input type="tel" name="phone number"  id="no" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="xxx-xxx-xx-xx">
+            </div>
+            <div>
+                <label for="cars">hangi araba</label><br>
+                <select name="seçilen araba" id="cars" size="3" multiple >
+                   <optgroup label="kalite">
+                    <option value="seat">seat</option>
+                    <option value="bmv">bmv</option>
+                </optgroup>
+                    <optgroup label="ucuz">
+                        <option value="tofaşk">tofaşk</option>
+                        <option value="passat">passat</option>
+                    </optgroup>
+                    
+                </select>
+            </div>
+            <div>
+                <label for="yorum"></label>
+                <textarea name="girilen uorum" id="yorum" placeholder="yorum giriniz"></textarea>
+            </div>
+            <div>
+                <label for="browser">browsers</label>
+                <input type="text" name="kullanılan browser" id="browser" list="bro">
+                <datalist id="bro" >
+                    <option value="firefox"></option>
+                    <option value="chrome"></option>
+                    <option value="safari"></option>
+                    <option value="bing"></option>
+                </datalist>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>kişisel bilgiler</legend>
+                    <label for="firstname">isim</label>
+                    <input type="text" name="name" id="fisrtname">
+                </fieldset>
+            </div>
+           
+        <br><br><br><br>
+        <input type="submit" value="Gönder">
+        <br>
+        <input type="reset" value="sıfırla">
+    </form>
+</body>
+</html>
